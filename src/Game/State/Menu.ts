@@ -13,10 +13,12 @@ export default class Menu extends Phaser.State {
     {
         const detector = new DeviceDetector(this.game.device);
         this.isMobile = detector.isMobile();
+        this.game.state.start('Play');
     }
 
     public update()
     {
+
     }
 
     public shutdown ()

@@ -7,10 +7,6 @@ export interface Controller
     goingRight(): boolean;
     goingDown(): boolean;
     goingUp(): boolean;
-    shooting(): boolean;
-    switchingWeapon(): boolean;
-    supported(): boolean;
-    identifier(): string;
 }
 
 export class KeyBoardController implements Controller
@@ -44,25 +40,5 @@ export class KeyBoardController implements Controller
     goingUp(): boolean
     {
         return this.cursors.up.isDown;
-    }
-
-    shooting(): boolean
-    {
-        return this.shotKey.isDown;
-    }
-
-    switchingWeapon(): boolean
-    {
-        return this.switchKey.isDown;
-    }
-
-    supported(): boolean
-    {
-        return true;
-    }
-
-    identifier(): string
-    {
-        return 'keyboard';
     }
 }

@@ -27,6 +27,10 @@ export default class Preload extends Phaser.State
 
     private loadGameImages()
     {
+        this.load.image('sky', 'assets/sky.png');
+        this.load.image('ground', 'assets/platform.png');
+        this.load.image('star', 'assets/star.png');
+        this.load.spritesheet('dude', 'assets/dude.png', 32, 48);
         //this.load.spritesheet('ControllerIndicator', 'assets/controllers/controller-indicator.png', 16,16);
         //this.load.spritesheet('Top', 'assets/sprites/top.png', 1, 1);
     }
